@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #050138;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price-container{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+}
+.price-container .table{
+    width: 300%;
+    height: 440px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-container .table:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.price-container .table:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.price-container .table.recommended{
+    height: 500px;
+    border-radius: 10px;
+    padding: 50px 30px 60px 30px;
+    z-index: 200;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.price-container .table .title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.price-container .table .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.price-container .table .precio .signo{
+    font-size: 25px;
+}
+.price-container .table .price .precio{
+    font-size:40px;
+    font-weight: bold;
+}
+.price-container .table .precio  .frecuencia{
+    color: #999;
+}
+.price-container .table .feactures{
+    flex: 1;
+}
+.price-container .table .feactures ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-container .table .feactures ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price-container .table .actions .btn{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border: solid 1px #999;
+    color: #999;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.price-container .table .actions .btn:hover{
+    background-color: #0d057d;
+    color: white;
+}
+.price-container .table .actions .btn.recommended{
+    background-color: #0d057d;
+    color: white; 
+}
+.price-container .table .actions .btn.recommended:hover{
+    background-color: #08053c;
+    border: 15px 15px 15px 15px  #08053c;
+}
